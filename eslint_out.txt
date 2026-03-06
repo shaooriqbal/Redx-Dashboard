@@ -1,0 +1,12 @@
+﻿
+C:\Users\SE\.gemini\antigravity\scratch\company-dashboard\src\components\ui\button.tsx
+  57:18  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\SE\.gemini\antigravity\scratch\company-dashboard\src\context\AppContext.tsx
+  33:14  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\SE\.gemini\antigravity\scratch\company-dashboard\src\lib\utils.ts
+  1:0  error  Parsing error: File appears to be binary
+
+Γ£û 3 problems (3 errors, 0 warnings)
+

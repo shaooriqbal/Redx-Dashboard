@@ -1,0 +1,109 @@
+﻿[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 22 modules transformed.
+node.exe : 
+[31mΓ£ù[39m Build 
+failed in 856ms
+At C:\Program Files\no
+dejs\npx.ps1:29 char:3
++   & $NODE_EXE 
+$NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: ([31mΓ£ù[   
+ 39m Build failed     
+in 856ms:String)     
+[], RemoteExcepti    
+on
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+[31merror during 
+build:
+[31m[vite:css] 
+[postcss] C:/Users/SE/
+.gemini/antigravity/sc
+ratch/company-dashboar
+d/src/index.css:1:1: 
+The `border-border` 
+class does not exist. 
+If `border-border` is 
+a custom class, make 
+sure it is defined 
+within a `@layer` 
+directive.[31m
+file: [36mC:/Users/SE
+/.gemini/antigravity/s
+cratch/company-dashboa
+rd/src/index.css:1:0[
+31m
+    at Input.error (C:
+\Users\SE\.gemini\anti
+gravity\scratch\compan
+y-dashboard\node_modul
+es\postcss\lib\input.j
+s:135:16)
+    at AtRule.error (C
+:\Users\SE\.gemini\ant
+igravity\scratch\compa
+ny-dashboard\node_modu
+les\postcss\lib\node.j
+s:146:32)
+    at processApply (C
+:\Users\SE\.gemini\ant
+igravity\scratch\compa
+ny-dashboard\node_modu
+les\tailwindcss\lib\li
+b\expandApplyAtRules.j
+s:380:29)
+    at C:\Users\SE\.ge
+mini\antigravity\scrat
+ch\company-dashboard\n
+ode_modules\tailwindcs
+s\lib\lib\expandApplyA
+tRules.js:551:9
+    at C:\Users\SE\.ge
+mini\antigravity\scrat
+ch\company-dashboard\n
+ode_modules\tailwindcs
+s\lib\processTailwindF
+eatures.js:55:50
+    at async plugins (
+C:\Users\SE\.gemini\an
+tigravity\scratch\comp
+any-dashboard\node_mod
+ules\tailwindcss\lib\p
+lugin.js:38:17)
+    at async 
+LazyResult.runAsync (C
+:\Users\SE\.gemini\ant
+igravity\scratch\compa
+ny-dashboard\node_modu
+les\postcss\lib\lazy-r
+esult.js:293:11)
+    at async 
+runPostCSS (file:///C:
+/Users/SE/.gemini/anti
+gravity/scratch/compan
+y-dashboard/node_modul
+es/vite/dist/node/chun
+ks/config.js:30145:19)
+    at async 
+compilePostCSS (file:/
+//C:/Users/SE/.gemini/
+antigravity/scratch/co
+mpany-dashboard/node_m
+odules/vite/dist/node/
+chunks/config.js:30129
+:6)
+    at async 
+compileCSS (file:///C:
+/Users/SE/.gemini/anti
+gravity/scratch/compan
+y-dashboard/node_modul
+es/vite/dist/node/chun
+ks/config.js:30059:26)
+[39m
