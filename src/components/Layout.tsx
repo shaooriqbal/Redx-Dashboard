@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Home, Package, Users, Menu, Moon, Sun } from 'lucide-react';
+import { Home, Package, Users, Menu, Moon, Sun, DollarSign } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 import { Button } from './ui/button';
 
@@ -11,6 +11,7 @@ export default function Layout() {
         { name: 'Dashboard', href: '/', icon: Home },
         { name: 'Products', href: '/products', icon: Package },
         { name: 'Resources', href: '/resources', icon: Users },
+        { name: 'Finance', href: '/finance', icon: DollarSign },
     ];
 
     return (

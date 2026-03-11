@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import Products from './pages/Products';
 import Resources from './pages/Resources';
+import Finance from './pages/Finance';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route index element={<Dashboard />} />
         <Route path="products" element={<Products />} />
         <Route path="resources" element={<Resources />} />
+        <Route path="finance" element={<Finance />} />
       </Route>
     </Routes>
   );
