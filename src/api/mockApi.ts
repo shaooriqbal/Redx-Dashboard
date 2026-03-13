@@ -16,6 +16,22 @@ let resources: Resource[] = [
     { id: '3', name: 'Carol Williams', role: 'Designer', department: 'Design', status: 'On Leave' },
 ];
 
+export interface Overtime {
+    id: string;
+    employeeName: string;
+    date: string;
+    hours: number;
+    description: string;
+    status: 'Approved' | 'Pending' | 'Rejected';
+}
+
+let overtimes: Overtime[] = [
+    { id: '1', employeeName: 'Alice Smith', date: '2026-03-10', hours: 4, description: 'Client meeting preparation', status: 'Approved' },
+    { id: '2', employeeName: 'Bob Johnson', date: '2026-03-11', hours: 2, description: 'Late night deployment', status: 'Pending' },
+    { id: '3', employeeName: 'Carol Williams', date: '2026-03-12', hours: 3, description: 'Design marathon', status: 'Approved' },
+    { id: '4', employeeName: 'Alice Smith', date: '2026-03-13', hours: 5, description: 'Debugging session', status: 'Rejected' },
+];
+
 export const mockApi = {
     // Products
     fetchProducts: async (): Promise<Product[]> => {
@@ -59,5 +75,11 @@ export const mockApi = {
         await delay(600);
         resources = resources.filter(r => r.id !== id);
         return id;
+    },
+
+    // Overtimes
+    fetchOvertimes: async (): Promise<Overtime[]> => {
+        await delay(1000);
+        return [...overtimes];
     },
 };

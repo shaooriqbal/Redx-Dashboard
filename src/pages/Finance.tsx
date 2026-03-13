@@ -103,7 +103,7 @@ export default function Finance() {
                     <CardTitle className="text-lg">Recent Transactions</CardTitle>
                     <p className="text-sm text-muted-foreground">Latest financial activities across the organization.</p>
                 </CardHeader>
-                <CardContent className="p-0">
+                <CardContent className="p-4">
                     <Table>
                         <TableHeader className="bg-muted/50">
                             <TableRow>
@@ -116,12 +116,12 @@ export default function Finance() {
                         </TableHeader>
                         <TableBody>
                             {recentTransactions.map((transaction: any) => (
-                                <TableRow key={transaction.id} className="hover:bg-muted/20 transition-colors">
+                                <TableRow key={transaction.id} className="hover:bg-muted/20 transition-colors h-14">
                                     <TableCell className="font-medium text-muted-foreground">{transaction.date}</TableCell>
                                     <TableCell>{transaction.description}</TableCell>
                                     <TableCell>
                                         <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold
-                                            ${transaction.type === 'income' ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400' : 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400'}
+                                            ${transaction.type === 'income' ? 'bg-green-200 text-green-800 dark:bg-green-900/30 dark:text-green-400' : 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400'}
                                         `}>
                                             {transaction.type.charAt(0).toUpperCase() + transaction.type.slice(1)}
                                         </span>
