@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Home, Package, Users, Menu, Moon, Sun, DollarSign } from 'lucide-react';
+import { Home, Package, Users, Menu, Moon, Sun, DollarSign, Clock } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 import { Button } from './ui/button';
 
@@ -12,6 +12,7 @@ export default function Layout() {
         { name: 'Products', href: '/products', icon: Package },
         { name: 'Resources', href: '/resources', icon: Users },
         { name: 'Finance', href: '/finance', icon: DollarSign },
+        { name: 'Over times', href: '/overtimes', icon: Clock },
     ];
 
     return (
@@ -21,7 +22,7 @@ export default function Layout() {
                 className={`fixed inset-y-0 left-0 z-50 w-64 bg-card border-r border-border transform transition-transform duration-200 ease-in-out md:relative md:translate-x-0 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}
             >
                 <div className="flex items-center h-16 px-6 border-b border-border">
-                    <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60">Redx-Dashboard</span>
+                    <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60">Redx Dashboard</span>
                 </div>
                 <nav className="p-4 space-y-2">
                     {navigation.map((item) => {
